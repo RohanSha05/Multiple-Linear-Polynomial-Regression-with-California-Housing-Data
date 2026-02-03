@@ -1,0 +1,2 @@
+# Multiple-Linear-Polynomial-Regression-with-California-Housing-Data
+This repository contains a Google Colab notebook that introduces Multiple Linear Regression and Polynomial Regression using the California Housing dataset from sklearn. The notebook walks through both the theory and practical implementation of regression models, making it suitable for beginners and early-intermediate learners in machine learning.
