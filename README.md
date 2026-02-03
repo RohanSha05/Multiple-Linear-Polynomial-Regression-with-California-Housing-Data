@@ -1,120 +1,99 @@
-# Multiple-Linear-Polynomial-Regression-with-California-Housing-Data
-This repository contains a Google Colab notebook that introduces Multiple Linear Regression and Polynomial Regression using the California Housing dataset from sklearn. The notebook walks through both the theory and practical implementation of regression models, making it suitable for beginners and early-intermediate learners in machine learning.
-Section 0: Setup & Data Exploration
+# **MULTIPLE LINEAR & POLYNOMIAL REGRESSION**
 
-Imports required libraries (NumPy, Pandas, Matplotlib, scikit-learn)
+## **PROJECT DESCRIPTION**
+This repository contains a Google Colab notebook that introduces **Multiple Linear Regression** and **Polynomial Regression** using the **California Housing Dataset** from `scikit-learn`.  
+The project demonstrates how regression models are implemented, evaluated, and compared on real-world data.
 
-Loads the California Housing dataset
+---
 
-Displays:
+## **DATASET**
+- **Name:** California Housing Dataset  
+- **Source:** `sklearn.datasets.fetch_california_housing`  
+- **Target Variable:** `MedHouseVal`
 
-Dataset shape
+---
 
-First few rows
+## **PROJECT STRUCTURE**
 
-Dataset information (.info())
+### **SECTION 0: SETUP & DATA EXPLORATION**
+- Import required libraries (`NumPy`, `Pandas`, `Matplotlib`, `scikit-learn`)
+- Load the dataset
+- Explore:
+  - Dataset shape
+  - First rows
+  - Dataset information
+  - Summary statistics
 
-Summary statistics (.describe())
+---
 
-Section 1: Multiple Linear Regression
+### **SECTION 1: MULTIPLE LINEAR REGRESSION**
+- Define target variable: **MedHouseVal**
+- Select features:
+  - `MedInc`
+  - `HouseAge`
+  - `AveRooms`
+  - `AveBedrms`
+  - `Population`
+  - `AveOccup`
+- Analyze correlations between features and target variable
 
-Defines:
+---
 
-Target variable: MedHouseVal
+### **SECTION 3: MULTIPLE LINEAR REGRESSION IMPLEMENTATION**
+- Split data into training and test sets
+- Train a **LinearRegression** model
+- Inspect model coefficients and intercept
+- Generate predictions
+- Evaluate performance using:
+  - **MAE (Mean Absolute Error)**
+  - **RMSE (Root Mean Squared Error)**
+  - **R² Score**
+- Visualize:
+  - Predicted vs actual values
+  - Residual plots
 
-Features: MedInc, HouseAge, AveRooms, AveBedrms, Population, AveOccup
+---
 
-Checks data shapes
+### **SECTION 4: INTRODUCTION TO POLYNOMIAL REGRESSION**
+- Explain the concept of polynomial regression
+- Use **MedInc** as a single feature
+- Fit and visualize a simple linear regression model
 
-Visualizes correlations between features and the target variable
+---
 
-Section 3: Multiple Linear Regression — Full Implementation
+### **SECTION 6: POLYNOMIAL REGRESSION IMPLEMENTATION**
+- Generate polynomial features using **PolynomialFeatures**
+- Train models with polynomial degrees:
+  - **1**
+  - **2**
+  - **3**
+  - **5**
+- Use **Pipeline** for feature transformation and regression
+- Compare models using:
+  - **R² Score**
+  - **RMSE**
 
-Splits data into training and test sets
+---
 
-Trains a LinearRegression model
+## **TECHNOLOGIES USED**
+- **Python**
+- **NumPy**
+- **Pandas**
+- **Matplotlib**
+- **scikit-learn**
+- **Google Colab**
 
-Examines:
+---
 
-Model coefficients
+## **HOW TO RUN**
+1. Open the notebook in **Google Colab** or **Jupyter Notebook**.
+2. Run all cells in order.
+3. The dataset is loaded directly from `scikit-learn` (no manual download required).
 
-Intercept
+---
 
-Makes predictions on training and test data
-
-Evaluates model performance using:
-
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-R² score
-
-Visualizes:
-
-Predicted vs. actual values
-
-Residual plots
-
-Section 4: Introduction to Polynomial Regression
-
-Introduces polynomial regression conceptually
-
-Uses a single feature (MedInc) to predict house value
-
-Fits a simple linear model
-
-Visualizes the linear relationship to build intuition
-
-Section 6: Polynomial Regression — Implementation
-
-Applies polynomial regression using PolynomialFeatures
-
-Tests multiple polynomial degrees: 1, 2, 3, and 5
-
-Uses Pipeline to combine feature transformation and regression
-
-Compares model performance using:
-
-R² score
-
-RMSE
-
-🛠️ Technologies Used
-
-Python
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-scikit-learn
-
-Google Colab
-
-🚀 How to Run
-
-Open the notebook in Google Colab or a local Jupyter environment.
-
-Run the cells in order from top to bottom.
-
-No additional dataset download is required—the dataset is loaded directly from scikit-learn.
-
-🎯 Learning Outcomes
-
-By the end of this notebook, you will understand:
-
-How multiple linear regression works on real data
-
-How to evaluate regression models effectively
-
-Why and when polynomial regression can improve performance
-
-The trade-off between model complexity and overfitting
-
-📌 Dataset
-
-California Housing Dataset
-Source: sklearn.datasets.fetch_california_housing
+## **PURPOSE**
+This project is intended for **educational purposes** and demonstrates:
+- Multiple Linear Regression on real-world data
+- Polynomial Regression and model complexity
+- Model evaluation and visualization techniques
